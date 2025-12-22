@@ -13,13 +13,14 @@ on:
 env:
   PYTHON_VERSION: "3.12"
   DOCKER_IMAGE: "vtrdll/django-api"
-  DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
 
 jobs:
 
   lint:
     name: Lint
     runs-on: ubuntu-latest
+    env:
+      DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
     steps:
       - uses: actions/checkout@v4
       - name: Setup Python
