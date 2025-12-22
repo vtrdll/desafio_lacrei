@@ -62,10 +62,10 @@ jobs:
       - name: Run migrations
         env:
           DATABASE_URL: postgres://test_user:test_pass@localhost:5432/test_db
-        run: python manage.py migrate
+        run: python app/manage.py migrate
 
       - name: Run tests
-        run: python manage.py test
+        run: python app/manage.py test
         env:
           DATABASE_URL: postgres://test_user:test_pass@localhost:5432/test_db
         
