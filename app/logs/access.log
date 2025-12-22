@@ -1,0 +1,4 @@
+2025-12-22 18:26:05,144 INFO 172.18.0.1 GET /api/profissionais/ 500 user=anon 45.83ms
+2025-12-22 18:26:21,452 INFO 172.18.0.1 GET /api/profissionais/ 500 user=anon 54.60ms
+2025-12-22 18:27:07,914 INFO 172.18.0.1 GET /api/profissionais/ 401 user=anon 67.17ms
+2025-12-22 18:27:11,920 INFO 172.18.0.1 GET /api/profissionais/ 401 user=anon 3.47ms
