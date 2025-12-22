@@ -1,7 +1,9 @@
 import time
 import logging
 
+
 access_logger = logging.getLogger("access")
+
 
 class DRFAccessLogMiddleware:
     def __init__(self, get_response):

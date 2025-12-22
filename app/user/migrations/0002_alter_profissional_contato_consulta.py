@@ -19,9 +19,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Consulta',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                                           primary_key=True,
+                                           serialize=False,
+                                           verbose_name='ID')),
                 ('data', models.DateField(auto_now_add=True)),
-                ('profissional', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='user.profissional')),
+                ('profissional', models.ForeignKey(on_delete=django.db.
+                                                   models.deletion.CASCADE,
+                                                   to='user.profissional')),
             ],
         ),
     ]

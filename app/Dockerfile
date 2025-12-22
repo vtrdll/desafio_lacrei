@@ -1,5 +1,7 @@
 FROM python:3.12-slim
 
+ENV DJANGO_SECRET_KEY='django-insecure-%reyouke64^6&%r2*)i0%dpq)xac3w+#ll%s0-70%$+6gescl4'
+
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
