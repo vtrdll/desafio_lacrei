@@ -1,28 +1,30 @@
+version: "3.9"
+
 services:
   web:
-    build: ./app
+    build: ./app                   # build do Dockerfile dentro da pasta app
     container_name: django_api
+    env_file: 
+      - .env                       # carrega variáveis do arquivo .env
     volumes:
-      - ./app:/app
+      - ./app:/app                  # monta código local no container
     ports:
       - "8000:8000"
     command: python manage.py runserver 0.0.0.0:8000
     depends_on:
       - db
     environment:
-      - DB_NAME=postgres
-      - DB_USER=postgres
-      - DB_PASSWORD=postgres
-      - DB_HOST=db
-      - DB_PORT=5432
+      DB_NAME: ${DB_NAME}           # pega do .env
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
 
   db:
     image: postgres:15
     container_name: postgres_db
-    environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+    env_file:
+      - .env                       # para manter senha/db consistentes
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:

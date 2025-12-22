@@ -15,8 +15,8 @@ class UserAuthTests(APITestCase):
 
     def test_login_jwt_sucesso(self):
         data = {
-            "username":"teste",
-            "password":"pass123456"
+            "username": "teste",
+            "password": "pass123456"
         }
         response = self.client.post(self.token_url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -32,7 +32,7 @@ class UserAuthTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
         self.assertIn('detail', response.data)
         self.assertEqual(
-            response.data['detail'],
-            'No active account'
+            str(response.data['detail']),
+            'No active account '
             'found with the given credentials'
         )

@@ -13,6 +13,7 @@ on:
 env:
   PYTHON_VERSION: "3.12"
   DOCKER_IMAGE: "vtrdll/django-api"
+  DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
 
 jobs:
 

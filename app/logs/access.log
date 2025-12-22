@@ -78,3 +78,9 @@
 2025-12-22 21:04:50,227 INFO 127.0.0.1 POST /api/token/ 200 user=anon 218.26ms
 2025-12-22 21:05:10,538 INFO 127.0.0.1 POST /api/token/ 401 user=anon 193.86ms
 2025-12-22 21:05:10,947 INFO 127.0.0.1 POST /api/token/ 200 user=anon 219.76ms
+2025-12-22 21:12:44,191 INFO 127.0.0.1 POST /api/token/ 401 user=anon 195.73ms
+2025-12-22 21:12:44,665 INFO 127.0.0.1 POST /api/token/ 200 user=anon 278.77ms
+2025-12-22 21:14:15,170 INFO 127.0.0.1 POST /api/token/ 401 user=anon 192.98ms
+2025-12-22 21:14:15,630 INFO 127.0.0.1 POST /api/token/ 200 user=anon 271.42ms
+2025-12-22 21:15:24,237 INFO 127.0.0.1 POST /api/token/ 401 user=anon 200.56ms
+2025-12-22 21:15:24,706 INFO 127.0.0.1 POST /api/token/ 200 user=anon 274.78ms
