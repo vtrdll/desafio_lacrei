@@ -15,8 +15,8 @@ class UserAuthTests(APITestCase):
 
     def test_login_jwt_sucesso(self):
         data = {
-            "username": "teste",
-            "password": "pass123456"
+            "username":"teste",
+            "password":"pass123456"
         }
         response = self.client.post(self.token_url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)

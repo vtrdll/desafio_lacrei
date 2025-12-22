@@ -190,3 +190,6 @@ ImportError: Could not import 'core.exceptions.custom_exception_handler' for API
 [2025-12-22 19:25:37,248] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
 [2025-12-22 19:26:35,871] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
 [2025-12-22 19:26:36,250] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-22 21:04:13,652] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-22 21:04:49,815] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-22 21:05:10,537] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
