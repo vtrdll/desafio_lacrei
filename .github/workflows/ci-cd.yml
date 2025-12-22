@@ -109,7 +109,6 @@ jobs:
           TAG=${{ github.ref_name }}
           docker build -t ${{ env.DOCKER_IMAGE }}:$TAG .
           docker push ${{ env.DOCKER_IMAGE }}:$TAG
-
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
