@@ -12,7 +12,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.12"
-  DOCKER_IMAGE: vtrdll/django-api
+  DOCKER_IMAGE: vtrdll1/django-api
 
 jobs:
 
