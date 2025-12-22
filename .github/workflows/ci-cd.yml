@@ -28,7 +28,6 @@ jobs:
       - name: Install Poetry
         run: pip install poetry
       - name: Install dependencies
-        working-directory: ./app
         run: poetry install --no-interaction
       - name: Run Lint
         run: poetry run flake8 . 
