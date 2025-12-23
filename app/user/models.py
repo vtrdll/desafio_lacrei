@@ -8,12 +8,12 @@ class Profissional(models.Model):
     contato = models.EmailField(max_length=50, blank=False, null=False)
 
     def __str__(self):
-        return f'Nome {self.nome} - Profissão {self.profissao}'
+        return f"Nome {self.nome} - Profissão {self.profissao}"
 
 
 class Consulta(models.Model):
     profissional = models.ForeignKey(Profissional, on_delete=models.CASCADE)
-    data = models.DateField(auto_now_add=True)
+    data = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Profissional{self.profissional} data da consulta {self.data}'
+        return f"Profissional{self.profissional} data da consulta {self.data}"

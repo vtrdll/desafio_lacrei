@@ -13,7 +13,7 @@ class ProfissionalViewSet(ModelViewSet):
     serializer_class = ProfissionalSerializer
 
     def list(self, request, *args, **kwargs):
-        logger.info('Listagem de Profissionais acessada')
+        logger.info("Listagem de Profissionais acessada")
         return super().list(request, *args, **kwargs)
 
 
@@ -22,5 +22,5 @@ class ConsultaViewSet(ModelViewSet):
     serializer_class = ConsultaSerializer
 
     def list(self, request, *args, **kwargs):
-        logger.info('Listagem de Consultas acessada')
+        logger.info("Listagem de Consultas acessada")
         return super().list(request, *args, **kwargs)

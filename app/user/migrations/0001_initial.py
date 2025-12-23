@@ -7,22 +7,30 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Profissional',
+            name="Profissional",
             fields=[
-                ('id', models.BigAutoField(auto_created=True,
-                                           primary_key=True,
-                                           serialize=False,
-                                           verbose_name='ID')),
-                ('name', models.CharField(max_length=200)),
-                ('profissao', models.CharField(max_length=50)),
-                ('endereco', models.CharField(max_length=200)),
-                ('contato', models.CharField(choices=[('TELEFONE', 'TELEFONE'),
-                                                      ('EMAIL', 'EMAIL')])),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=200)),
+                ("profissao", models.CharField(max_length=50)),
+                ("endereco", models.CharField(max_length=200)),
+                (
+                    "contato",
+                    models.CharField(
+                        choices=[("TELEFONE", "TELEFONE"), ("EMAIL", "EMAIL")]
+                    ),
+                ),
             ],
         ),
     ]

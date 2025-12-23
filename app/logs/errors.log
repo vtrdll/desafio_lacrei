@@ -196,3 +196,37 @@ ImportError: Could not import 'core.exceptions.custom_exception_handler' for API
 [2025-12-22 21:12:44,190] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
 [2025-12-22 21:14:15,169] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
 [2025-12-22 21:15:24,236] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-23 14:49:37,934] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:49:42,435] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:50:38,863] ERROR django.request Internal Server Error: /api/profissionais
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/profissionais/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-12-23 14:50:38,865] ERROR django.server "POST /api/profissionais HTTP/1.1" 500 64637
+[2025-12-23 14:51:38,788] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error={'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+[2025-12-23 14:51:57,547] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=GET | path=/api/token/ | status=405 | error=Method "GET" not allowed.
+[2025-12-23 14:52:01,693] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-23 14:52:19,211] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:52:30,450] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:52:53,926] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:53:58,845] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:54:06,646] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-23 14:54:09,549] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-23 14:54:13,335] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token has wrong type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-23 14:54:59,367] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-23 14:55:02,020] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-23 14:55:22,641] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:55:25,038] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 14:56:51,705] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/1/ | status=405 | error=Method "POST" not allowed.
+[2025-12-23 14:56:55,234] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/1/ | status=404 | error=No Profissional matches the given query.
+[2025-12-23 14:57:00,789] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/1/ | status=404 | error=No Profissional matches the given query.
+[2025-12-23 14:58:30,255] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.

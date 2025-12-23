@@ -7,26 +7,35 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('user', '0001_initial'),
+        ("user", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='profissional',
-            name='contato',
+            model_name="profissional",
+            name="contato",
             field=models.EmailField(max_length=50),
         ),
         migrations.CreateModel(
-            name='Consulta',
+            name="Consulta",
             fields=[
-                ('id', models.BigAutoField(auto_created=True,
-                                           primary_key=True,
-                                           serialize=False,
-                                           verbose_name='ID')),
-                ('data', models.DateField(auto_now_add=True)),
-                ('profissional', models.ForeignKey(on_delete=django.db.
-                                                   models.deletion.CASCADE,
-                                                   to='user.profissional')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("data", models.DateField(auto_now_add=True)),
+                (
+                    "profissional",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="user.profissional",
+                    ),
+                ),
             ],
         ),
     ]

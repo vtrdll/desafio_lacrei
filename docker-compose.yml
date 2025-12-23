@@ -1,6 +1,6 @@
 services:
   web:
-    build: ./app
+    build: .
     env_file:
       - .env
     volumes:
