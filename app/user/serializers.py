@@ -10,12 +10,16 @@ class ProfissionalSerializer(serializers.ModelSerializer):
 
     def validate_nome(self, value):
         if not all(x.isalpha() or x.isspace() for x in value):
-            raise serializers.ValidationError("Nome deve ter" "apenas letras e espaços")
+            raise serializers.ValidationError(
+                "Nome deve ter apenas letras e espaços"
+            )
         return value.title()
 
     def validate_profissao(self, value):
         if not all(x.isalpha() or x.isspace() for x in value):
-            raise serializers.ValidationError("Nome deve ter" "apenas letras e espaços")
+            raise serializers.ValidationError(
+                "Nome deve ter apenas letras e espaços"
+            )
         return value.title()
 
     def validate_contato(self, value):
@@ -32,5 +36,7 @@ class ConsultaSerializer(serializers.ModelSerializer):
 
     def validate_name(self, value):
         if not all(x.isalpha() or x.isspace() for x in value):
-            raise serializers.ValidationError("Nome deve ter" "apenas letras e espaços")
+            raise serializers.ValidationError(
+                "Nome deve ter apenas letras e espaços"
+            )
         return value.title()

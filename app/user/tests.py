@@ -7,7 +7,9 @@ from django.urls import reverse
 class UserAuthTests(APITestCase):
 
     def setUp(self):
-        self.user = User.objects.create_user(username="teste", password="pass123456")
+        self.user = User.objects.create_user(
+            username="teste", password="pass123456"
+        )
         self.token_url = reverse("token_obtain_pair")
 
     def test_login_jwt_sucesso(self):

@@ -123,3 +123,17 @@
 2025-12-23 14:59:39,726 INFO 172.18.0.1 GET /api/consultas/ 200 user=1 28.76ms
 2025-12-23 15:00:10,925 INFO 172.18.0.1 GET /api/consultas/ 200 user=1 10.58ms
 2025-12-23 15:00:25,715 INFO 172.18.0.1 POST /api/consultas/ 201 user=1 19.21ms
+2025-12-23 15:11:40,620 INFO 172.18.0.1 POST /api/consultas/4 500 user=anon 30.30ms
+2025-12-23 15:11:47,193 INFO 172.18.0.1 POST /api/consultas/4/ 405 user=1 53.79ms
+2025-12-23 15:12:18,340 INFO 172.18.0.1 POST /api/consultas/4/ 405 user=1 10.59ms
+2025-12-23 15:12:32,342 INFO 172.18.0.1 GET /api/token/refresh/ 405 user=anon 57.97ms
+2025-12-23 15:12:37,108 INFO 172.18.0.1 POST /api/token/ 200 user=anon 238.66ms
+2025-12-23 15:12:51,316 INFO 172.18.0.1 GET /api/token/refresh/ 405 user=anon 8.98ms
+2025-12-23 15:12:53,017 INFO 172.18.0.1 POST /api/token/refresh/ 200 user=anon 60.51ms
+2025-12-23 15:13:05,916 INFO 172.18.0.1 POST /api/consultas/4/ 405 user=1 11.74ms
+2025-12-23 15:13:09,429 INFO 172.18.0.1 GET /api/consultas/ 200 user=1 11.52ms
+2025-12-23 15:14:11,885 INFO 172.18.0.1 POST /api/consultas/ 201 user=1 29.17ms
+2025-12-23 15:18:11,718 INFO 172.18.0.1 GET /api/sua-rota/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NTA0N 404 user=anon 4.82ms
+2025-12-23 15:19:08,447 INFO 172.18.0.1 GET /api/profissionais/ 401 user=anon 3.93ms
+2025-12-23 15:19:12,123 INFO 172.18.0.1 GET /api/profissionais/?format=json 401 user=anon 1.10ms
+2025-12-23 15:19:13,954 INFO 172.18.0.1 GET /api/profissionais/ 401 user=anon 3.12ms

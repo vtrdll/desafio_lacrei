@@ -230,3 +230,25 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-12-23 14:56:55,234] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/1/ | status=404 | error=No Profissional matches the given query.
 [2025-12-23 14:57:00,789] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/1/ | status=404 | error=No Profissional matches the given query.
 [2025-12-23 14:58:30,255] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 15:11:40,620] ERROR django.request Internal Server Error: /api/consultas/4
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/consultas/4/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-12-23 15:11:40,621] ERROR django.server "POST /api/consultas/4 HTTP/1.1" 500 64604
+[2025-12-23 15:11:47,192] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/4/ | status=405 | error=Method "POST" not allowed.
+[2025-12-23 15:12:18,339] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/4/ | status=405 | error=Method "POST" not allowed.
+[2025-12-23 15:12:32,285] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-23 15:12:51,308] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-23 15:13:05,915] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/4/ | status=405 | error=Method "POST" not allowed.
+[2025-12-23 15:19:08,444] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 15:19:12,122] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/?format=json | status=401 | error=Authentication credentials were not provided.
+[2025-12-23 15:19:13,952] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
