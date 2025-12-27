@@ -252,3 +252,188 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 [2025-12-23 15:19:08,444] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
 [2025-12-23 15:19:12,122] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/?format=json | status=401 | error=Authentication credentials were not provided.
 [2025-12-23 15:19:13,952] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 21:24:45,410] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 21:24:49,763] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=GET | path=/api/token/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:24:55,584] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:25:03,373] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-26 21:25:04,844] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 21:25:15,432] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=GET | path=/api/token/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:25:15,802] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 21:25:16,928] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 21:25:20,465] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:29:25,147] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token has wrong type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-26 21:29:54,430] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=GET | path=/api/token/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:29:54,806] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 21:30:00,056] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:30:01,861] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token has wrong type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-26 21:30:11,849] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-26 21:30:18,645] ERROR rest_framework DRF exception | view=TokenRefreshView | method=POST | path=/api/token/refresh/ | status=401 | error={'detail': ErrorDetail(string='Token is invalid', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid')}
+[2025-12-26 21:30:29,552] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:38:55,280] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 21:39:59,015] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/5/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:02:13,160] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 22:06:36,304] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 22:06:36,306] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=GET | path=/api/consultas/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 22:14:16,265] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/1/ | status=404 | error=No Profissional matches the given query.
+[2025-12-26 22:14:16,635] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:16:13,685] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:16:46,718] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/2/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:21:57,339] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=GET | path=/api/token/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 22:21:57,849] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 22:21:59,751] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 22:22:01,113] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 22:22:03,406] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 22:22:12,795] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error={'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+[2025-12-26 22:22:37,489] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/5/ | status=401 | error={'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+[2025-12-26 22:22:44,128] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error={'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+[2025-12-26 22:22:49,763] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=GET | path=/api/token/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 22:23:05,315] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 22:23:24,335] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 22:23:37,605] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 22:23:59,753] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/5/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:25:19,860] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/ | status=405 | error=Method "PUT" not allowed.
+[2025-12-26 22:25:41,787] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/5/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:40:12,752] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/ | status=405 | error=Method "PUT" not allowed.
+[2025-12-26 22:41:13,763] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/8/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:46:38,798] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=400 | error={'nome': [ErrorDetail(string='This field is required.', code='required')], 'profissao': [ErrorDetail(string='This field is required.', code='required')], 'endereco': [ErrorDetail(string='This field is required.', code='required')], 'contato': [ErrorDetail(string='This field is required.', code='required')]}
+[2025-12-26 22:46:39,169] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/2/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:47:20,062] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=400 | error={'nome': [ErrorDetail(string='This field is required.', code='required')], 'profissao': [ErrorDetail(string='This field is required.', code='required')], 'endereco': [ErrorDetail(string='This field is required.', code='required')], 'contato': [ErrorDetail(string='This field is required.', code='required')]}
+[2025-12-26 22:47:20,430] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/2/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:49:24,272] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/2/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:53:49,266] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=401 | error={'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+[2025-12-26 22:54:21,494] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 22:54:31,940] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 22:55:51,573] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/1/ | status=405 | error=Method "POST" not allowed.
+[2025-12-26 22:55:52,680] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/4/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:57:17,352] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/5/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 22:59:54,436] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/8/ | status=401 | error={'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is expired', code='token_not_valid')}]}
+[2025-12-26 23:00:01,016] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 23:00:11,861] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-26 23:00:21,615] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/8/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:00:49,116] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/5/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:02:19,103] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/5/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:02:19,456] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:03:19,061] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/5/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:03:19,413] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:05:49,628] ERROR django.request Internal Server Error: /api/profissionais
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/profissionais/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-12-26 23:05:49,631] ERROR django.server "POST /api/profissionais HTTP/1.1" 500 64637
+[2025-12-26 23:05:54,235] ERROR django.request Internal Server Error: /api/profissionais
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/profissionais/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[2025-12-26 23:05:54,237] ERROR django.server "POST /api/profissionais HTTP/1.1" 500 64637
+[2025-12-26 23:05:59,785] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:08:34,951] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:08:35,331] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:08:35,687] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:08:35,705] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:08:35,707] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=GET | path=/api/consultas/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:08:36,073] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-26 23:31:41,449] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:31:41,797] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:31:42,145] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:31:42,163] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:31:42,165] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=GET | path=/api/consultas/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:31:42,524] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-26 23:35:58,761] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:36:43,045] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:36:43,399] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:36:43,748] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:36:43,767] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:36:43,768] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=GET | path=/api/consultas/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:36:44,127] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-26 23:40:41,754] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:40:42,155] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:40:42,528] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:40:42,551] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:40:42,552] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=GET | path=/api/consultas/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-26 23:40:42,936] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=POST | path=/api/token/ | status=401 | error=No active account found with the given credentials
+[2025-12-26 23:41:09,275] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:41:38,929] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:41:38,932] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:44:29,393] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/2/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:44:34,032] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=GET | path=/api/consultas/2/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-26 23:45:20,190] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/ | status=405 | error=Method "PUT" not allowed.
+[2025-12-27 00:04:42,894] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:04:48,492] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:04:48,495] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:05:11,658] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:05:11,661] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:05:49,143] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:05:49,146] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:17:28,673] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:17:28,676] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:18:34,029] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:18:34,032] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:20:22,720] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:20:22,724] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:20:32,748] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:20:32,751] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:38:44,251] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:38:44,255] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:38:48,560] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:38:48,563] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:40:35,061] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:40:35,065] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=DELETE | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:42:59,746] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/ | status=400 | error={'profissional': [ErrorDetail(string='This field is required.', code='required')]}
+[2025-12-27 00:47:31,567] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:47:31,570] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:47:46,286] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:47:46,289] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:48:38,790] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:48:38,793] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:49:26,374] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:49:26,377] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:49:46,103] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/ | status=405 | error=Method "PUT" not allowed.
+[2025-12-27 00:50:11,593] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/4/ | status=400 | error={'nome': [ErrorDetail(string='This field is required.', code='required')], 'endereco': [ErrorDetail(string='This field is required.', code='required')], 'contato': [ErrorDetail(string='This field is required.', code='required')]}
+[2025-12-27 00:50:27,285] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/4/ | status=400 | error={'contato': [ErrorDetail(string='Email já registrado', code='invalid')]}
+[2025-12-27 00:50:45,730] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/4/ | status=400 | error={'nome': [ErrorDetail(string='This field is required.', code='required')], 'contato': [ErrorDetail(string='This field is required.', code='required')]}
+[2025-12-27 00:50:53,459] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/4/ | status=405 | error=Method "POST" not allowed.
+[2025-12-27 00:53:48,260] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PATCH | path=/api/profissionais/4/ | status=400 | error=JSON parse error - Expecting property name enclosed in double quotes: line 6 column 1 (char 48)
+[2025-12-27 00:54:24,214] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:54:24,218] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/1/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 00:58:30,676] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=DELETE | path=/api/consultas/1/ | status=404 | error=No Consulta matches the given query.
+[2025-12-27 01:00:53,304] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:00:53,308] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:00:53,664] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:00:53,667] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=DELETE | path=/api/consultas/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:00:54,021] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:00:54,024] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:11:19,237] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-27 01:11:20,679] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-27 01:11:22,010] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-27 01:11:22,522] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-27 01:47:17,198] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=POST | path=/api/profissionais/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:47:17,202] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=POST | path=/api/consultas/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:47:17,553] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=DELETE | path=/api/profissionais/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:47:17,556] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=DELETE | path=/api/consultas/6/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:47:17,915] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=PUT | path=/api/profissionais/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 01:47:17,917] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=PUT | path=/api/consultas/7/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 17:17:52,364] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-27 17:17:59,256] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-27 18:40:59,499] ERROR rest_framework DRF exception | view=TokenObtainPairView | method=GET | path=/api/token/ | status=405 | error=Method "GET" not allowed.
+[2025-12-27 18:41:13,811] ERROR rest_framework DRF exception | view=TokenRefreshView | method=GET | path=/api/token/refresh/ | status=405 | error=Method "GET" not allowed.
+[2025-12-27 18:41:46,567] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/4/ | status=403 | error=You do not have permission to perform this action.
+[2025-12-27 18:45:36,494] ERROR rest_framework DRF exception | view=ProfissionalViewSet | method=GET | path=/api/profissionais/ | status=401 | error=Authentication credentials were not provided.
+[2025-12-27 18:45:36,496] ERROR rest_framework DRF exception | view=ConsultaViewSet | method=GET | path=/api/consultas/ | status=401 | error=Authentication credentials were not provided.

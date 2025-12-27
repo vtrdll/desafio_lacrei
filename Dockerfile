@@ -3,7 +3,9 @@ FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /app
+
+#desafo_lacrei.Docker interpreta a pasta como project. 
+WORKDIR /project 
 
 RUN apt-get update && apt-get install -y \
     build-essential \

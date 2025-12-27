@@ -4,7 +4,8 @@ services:
     env_file:
       - .env
     volumes:
-      - ./app:/app
+      - .:/project 
+    working_dir: /project/app #caminho a ser procurado pelo  manage.py
     ports:
       - "8000:8000"
     depends_on:
