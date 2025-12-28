@@ -1,157 +1,181 @@
-🛠️ Tecnologias Utilizadas
+<h1 align="center"> Desafio Lacrei — API Django</h1>
 
-- Python 3.12
-- Django 6.0
-- Django Rest Framework
-- JWT (SimpleJWT)
-- PostgreSQL
-- Poetry
-- Pytest
-- Black / Isort / Flake8
-- corsheaders
+<p align="center">
+  <b>API REST construída com Django + DRF, autenticação JWT e PostgreSQL</b>
+</p>
 
-⚙️ Pré-requisitos
+<hr/>
 
-- Python 3.12+
-- Poetry instalado
-- https://python-poetry.org/docs/#installation
-- PostgreSQL (ou Docker)
+<h2>🛠️ Tecnologias Utilizadas</h2>
+<ul>
+  <li>Python 3.12</li>
+  <li>Django 6.0</li>
+  <li>Django Rest Framework</li>
+  <li>JWT (SimpleJWT)</li>
+  <li>PostgreSQL</li>
+  <li>Poetry</li>
+  <li>Pytest</li>
+  <li>Black / Isort / Flake8</li>
+  <li>corsheaders</li>
+  <li>Docker & Docker Compose</li>
+</ul>
 
+<hr/>
 
-▶️ Passo a passo para rodar o projeto (Docker)
+<h2>⚙️ Pré-requisitos</h2>
+<ul>
+  <li>Python 3.12+</li>
+  <li>Poetry instalado</li>
+  <li>
+    Documentação:
+    <a href="https://python-poetry.org/docs/#installation" target="_blank">
+      https://python-poetry.org/docs/#installation
+    </a>
+  </li>
+  <li>PostgreSQL (ou Docker)</li>
+</ul>
 
-### Passo 1️⃣ — Clonar o repositório
-- git clone https://github.com/vtrdll/desafio_lacrei.git
-- cd desafio_lacrei
+<hr/>
 
+<h2>▶️ Executando o Projeto com Docker (Recomendado)</h2>
 
-### Passo 2️⃣ — Build da imagem Docker  (Durante o build, o Poetry é configurado para não criar virtualenv)
-- docker compose build
+<h3>1️⃣ Clonar o repositório</h3>
+<pre><code>git clone https://github.com/vtrdll/desafio_lacrei.git
+cd desafio_lacrei</code></pre>
 
-### Passo 3️⃣ — Subir os containers (certifique-se se esta na raiz do projeto.)
-- docker compose up
-- docker-compose ps  #vereficase esta rodando. 
+<h3>2️⃣ Build da imagem Docker</h3>
+<p>Durante o build, o Poetry é configurado para <b>não criar virtualenv</b>.</p>
+<pre><code>docker compose build</code></pre>
 
-### Passo 4️⃣ — Rodar as migrações. (Criar Banco)
-- docker compose exec web python manage.py migrate
+<h3>3️⃣ Subir os containers</h3>
+<pre><code>docker compose up
+docker compose ps</code></pre>
 
-### Passo 5️⃣ — Variáveis de Ambiente 
-- Acesse .env.example e implemente variáveis de ambientes necessárias. Após isso  renomeie para .env
+<h3>4️⃣ Rodar as migrações</h3>
+<pre><code>docker compose exec web python manage.py migrate</code></pre>
 
-### Passo 6️⃣ — Criar superusuário
-- docker compose exec web python manage.py createsuperuser (Isso dara permissão para acessar endpoints, não  esqueça do token)
+<h3>5️⃣ Variáveis de Ambiente</h3>
+<ul>
+  <li>Acesse <code>.env.example</code></li>
+  <li>Implemente as variáveis necessárias</li>
+  <li>Renomeie para <code>.env</code></li>
+</ul>
 
-### Passo 7️⃣— Autenticação JWT
-- POST http://localhost:8000/api/token/ (username, password = criado em  superuser )
-### Para acessar endpoints protegidos, inclua o token de acesso no header:
-- Authorization: Bearer <token_de_acesso>
+<h3>6️⃣ Criar superusuário</h3>
+<pre><code>docker compose exec web python manage.py createsuperuser</code></pre>
+<p><i>Esse usuário será usado para autenticação JWT.</i></p>
 
-### Passo 8️⃣ — Acessar a aplicação 
-http://localhost:8000
+<h3>7️⃣ Autenticação JWT</h3>
+<pre><code>POST http://localhost:8000/api/token/</code></pre>
 
-### EndPoint Profissionais
-- `GET /api/profissionais/` → lista
-- `GET /api/profissionais/{id}/` → consulta por id
-- `POST /api/profissionais/` → cria  
-- `PUT /api/profissionais/{id}/` → atualiza
-- `DELETE /api/profissionais/{id}/` → remove
+<p>Headers para endpoints protegidos:</p>
+<pre><code>Authorization: Bearer &lt;token_de_acesso&gt;</code></pre>
 
-### EndPoint Consultas
-- `GET /api/consultas/` → lista
-- `GET /api/consultas/{id}/` → consulta por id
-- `POST /api/consultas/` → cria  (passar id do profissional)
-- `PUT /api/consultas/{id}/` → atualiza
-- `DELETE /api/consultas/{id}/` → remove
+<h3>8️⃣ Acessar a aplicação</h3>
+<p>
+  👉 <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>
+</p>
 
+<hr/>
 
-### Passo 9️⃣  — Rodar testes (Opicional. Os testes são feitos a cada push para o repositorio.)
--  docker compose exec web pytest
--  docker compose exec web black   
--  docker compose exec web isort
--  docker compose exec web flake8
+<h2>📌 Endpoints Disponíveis</h2>
 
-============================================================================================================================
+<h3>👨‍⚕️ Profissionais</h3>
+<ul>
+  <li><code>GET /api/profissionais/</code> → Listar</li>
+  <li><code>GET /api/profissionais/{id}/</code> → Consultar por ID</li>
+  <li><code>POST /api/profissionais/</code> → Criar</li>
+  <li><code>PUT /api/profissionais/{id}/</code> → Atualizar</li>
+  <li><code>DELETE /api/profissionais/{id}/</code> → Remover</li>
+</ul>
 
-▶️ Passo a passo para rodar o projeto Setup local (sem Docker)
-Este modo é recomendado apenas para desenvolvimento local.
-Neste caso, o Poetry utilizará **ambiente virtual próprio**.
+<h3>📅 Consultas</h3>
+<ul>
+  <li><code>GET /api/consultas/</code> → Listar</li>
+  <li><code>GET /api/consultas/{id}/</code> → Consultar por ID</li>
+  <li><code>POST /api/consultas/</code> → Criar (informar ID do profissional)</li>
+  <li><code>PUT /api/consultas/{id}/</code> → Atualizar</li>
+  <li><code>DELETE /api/consultas/{id}/</code> → Remover</li>
+</ul>
 
-### Passo 1️⃣ - Pré-requisitos
-- Python 3.12+
-- Poetry
-- PostgreSQL
-- Git
+<hr/>
 
-### Passo 2️⃣ - Clonar o repositório
-- git clone https://github.com/seu-usuario/seu-repositorio.git
-- cd seu-repositorio
+<h2>🧪 Testes & Qualidade de Código (Opcional)</h2>
+<p>Os testes são executados via GitHub Actions.</p>
 
-### Passo 3️⃣ - Criar ambiente virtual com Poetry
-- poetry install
-- poetry shell
+<pre><code>docker compose exec web pytest
+docker compose exec web black
+docker compose exec web isort
+docker compose exec web flake8</code></pre>
 
-### Passo 4️⃣ - Rodar migrações
-- python manage.py migrate
+<hr/>
 
-### Passo 5️⃣ - Criar arquivo .env
-- cp .env.example .env
+<h2>▶️ Setup Local (Sem Docker)</h2>
+<p><b>Recomendado apenas para desenvolvimento local.</b></p>
 
-### Passo 6️⃣ - Criar superusuário
-- python manage.py createsuperuser (Isso dara permissão para acessar endpoints, não  esqueça do token)
+<h3>Pré-requisitos</h3>
+<ul>
+  <li>Python 3.12+</li>
+  <li>Poetry</li>
+  <li>PostgreSQL</li>
+  <li>Git</li>
+</ul>
 
-### Passo 7️⃣ - Subir servidor local
-- python manage.py runserver
+<h3>Passos</h3>
+<pre><code>git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+poetry install
+poetry shell
+python manage.py migrate
+cp .env.example .env
+python manage.py createsuperuser
+python manage.py runserver</code></pre>
 
-### Passo 8️⃣ - Autenticação JWT
-- POST http://localhost:8000/api/token/ (username, password = criado em  superuser )
-### Para acessar endpoints protegidos, inclua o token de acesso no header:
-- Authorization: Bearer <token_de_acesso>
+<hr/>
 
-Observação importante sobre o Poetry
-Este projeto não utiliza poetry shell, pois:
-virtualenvs.create = false
-O container Docker já é o ambiente isolado
-As dependências são instaladas diretamente no Python do container
+<h2>♻️ ROLLBACK & RESET</h2>
 
-===============================================================================================================
+<h3>🔥 Rollback Completo (Remove Banco)</h3>
+<pre><code>docker compose down -v
+docker compose build --no-cache
+docker compose up</code></pre>
 
-### ROLLBACK
-Esta seção permite voltar o projeto para estado limpo, caso algo dê errado.
+<h3>♻️ Rollback Apenas da Aplicação</h3>
+<pre><code>docker compose down
+docker compose up</code></pre>
 
-### ROLLBACK COMPLETO!
- 
-### docker compose down -v 
--   remove todos os containers definidos no docker-compose.yml e APAGA O BANCO DADOS.
+<h3>🗄️ Reset de Migrações</h3>
+<pre><code>docker compose exec web python manage.py migrate app zero
+docker compose exec web python manage.py migrate</code></pre>
 
-### docker compose build --no-cache
--   recompila as imagens Docker do zero, ignorando qualquer cache anterior
+<h3>🧹 Limpeza Total do Docker</h3>
+<pre><code>docker system prune -af</code></pre>
 
-### sobe aplicacao
--   docker compose up
+<hr/>
 
+<h2>⚠️ Observações Importantes</h2>
+<ul>
+  <li>
+    ⚠️ Atenção à variável <code>DEBUG = FALSE</code> (produção).
+    Ela controla partes críticas da aplicação.
+  </li>
+  <li>
+    Sempre que alterar models ou <code>settings.py</code>, execute:
+    <code>makemigrations</code> antes de <code>migrate</code>.
+  </li>
+  <li>
+    Evite rodar migrações de forma descontrolada para não gerar conflitos.
+  </li>
+  <li>
+    O tempo de expiração do token JWT pode ser ajustado em <code>settings.py</code>.
+  </li>
+  <li>
+    Consulte o <code>.env.example</code> para entender todas as variáveis disponíveis.
+  </li>
+</ul>
 
-Rollback apenas da aplicação sem alterar os volumes. 
-### remove todos os containers definidos no docker-compose.yml
--   docker compose down
+<hr/>
 
-### sobe aplicacao
--   docker compose up
-
-### Reset de migrações. Retornar a Zero permite uma nova aplicacao evitando conflitos
--   docker compose exec web python manage.py migrate app zero
-
-### Criando nossa aplicacao 
--   docker compose exec web python manage.py migrate
-
-### Limpeza total do Docker
--   docker system prune -af
-
-
-### Observacoes importantes: 
--   Tenha  cuidado com a variável de ambiente DEBUG = FALSE  (producao).
-ele controla parte  cruciais da configuracao do projeto.
--   Após a  criação, considere sempre que fazer alterações no banco de dados ou no settings.py utilizar python manage.py makemigrations (comando varia dependendo do ambiente) antes de cada migrate.py. Evite fazer esse  processo de forma descontrolada, podendo acarretar em conflito de migrações.
--   Caso queira pode alterar o time limit do token para durar mais tempo facilitando o desenvolvimento em settings.py.
--   .env.example contem mais detalhes sobre como estruturar sua .env
-
-### PRINTS
+<p align="center">
+  🚀 <b>Projeto pronto para desenvolvimento, testes e deploy!</b>
+</p>
